@@ -1,0 +1,7 @@
+{
+  "name": "chatAula",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
