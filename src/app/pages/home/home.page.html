@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <strong>CHAT EN EL AULA</strong>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- 
+Ingresar un usuario. (registrado en BD).
+La aplicación mostrará, en su pantalla principal, dos botones (con colores que los distinga) y el texto
+PPS-4A y PPS-4B, respectivamente.
+Los botones deben de ocupar toda la pantalla (TODA LA PANTALLA).
+Una vez seleccionada la sala (respetar el mismo color del botón de ingreso), se tendrá un cuadro de texto y
+un botón para ingresar un mensaje.
+El listado de mensajes muestra el usuario que lo generó (al estilo Whatsapp).
+Mostrar la fecha y el autor del mensaje.
+Si el autor del mensaje es uno mismo, NO mostrar el nombre.
+Los mensajes propios se alinearán a la derecha, los demás, a la izquierda.
++ Los mensajes no pueden tener más de 21 caracteres.
++ Enviar notificaciones push a las personas que están en la sala.
+-->
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="div-botones">
+      <ion-button color="light" size="large" expand="block" fill="outline" class="boton-sala a4" (click)="ingresarSala('4a')"> <strong>PPS-4A</strong> </ion-button>
+      <ion-button color="light" size="large" expand="block" fill="outline" class="boton-sala b4" (click)="ingresarSala('4b')"> <strong>PPS-4B</strong> </ion-button>
+    </div>
+
+    <ion-button color="danger" size="large" expand="block" fill="outline" (click)="cerrarSesion()">Cerrar sesion</ion-button>
+  </div>
+</ion-content>

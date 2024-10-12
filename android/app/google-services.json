@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402383161721",
+    "project_id": "ionic-app-d39f5",
+    "storage_bucket": "ionic-app-d39f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402383161721:android:3d46cd42410346897f87a8",
+        "android_client_info": {
+          "package_name": "io.ionic.chatAula"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9pR9LyVjrcpjDrvfhE5ceG1P2gvIAwAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

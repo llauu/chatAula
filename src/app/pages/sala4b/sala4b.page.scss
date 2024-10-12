@@ -1,0 +1,125 @@
+* {
+    color: white;
+}
+
+ion-toolbar {
+    --background: #30ffc1;
+}
+
+ion-content {
+    --background: #117557;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-salir {
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #117557;
+}
+
+.chat {
+    height: 87%;
+
+
+}
+
+.input-mes {
+
+    background-color: blue;
+    height: 13%;
+}
+
+
+.chat {
+    overflow-y: scroll;
+    padding: 10px;
+    max-height: 90%;
+}
+
+.chat-message {
+    width: 65%;
+    border-radius: 4px;
+}
+
+.chat-message div b {
+    color: black !important;
+}
+
+.chat-message div {
+    color: black !important;
+}
+
+.chat-message-me {
+    margin: 8px 0;
+    background-color: #c7c7c7;
+    margin-left: auto;
+}
+
+.chat-message-other {
+    margin: 30px 0;
+    background-color: #E4E4E4;
+    margin-right: auto;
+}
+
+.chat-message-user {
+    padding: 3px;
+    margin-left: 6px;
+}
+
+.chat-message-text {
+    padding: 3px;
+    margin-left: 6px;
+}
+
+.chat-message-time {
+    padding: 3px;
+    margin-left: 43%;
+    font-size: 13px;
+    color: #4d4d4d;
+}
+
+.input-mes {
+    width: 100%;
+    background-color: #30ffc1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: auto;
+}
+
+
+.input-mes input {
+    width: 73%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+.btn-enviar {
+    width: 20%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #117557;
+}

@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="header">
+      <ion-title> <strong>#PPS-4B</strong> </ion-title>
+      <button class="btn btn-primary btn-salir" (click)="volver()">Volver</button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="chat" id="chat">
+    @for (message of messages; track $index) {
+      @if(message.usuario === user) {
+        <div class="chat-message chat-message-me">
+          <div class="chat-message-text">{{ message.mensaje }}</div>
+          <div class="chat-message-time">{{ formatTimestamp(message.fecha) }}</div>
+        </div>
+      }
+      @else {
+        <div class="chat-message chat-message-other">
+          <div class="chat-message-user"><b>{{ formatUser(message.usuario) }}</b></div>
+          <div class="chat-message-text">{{ message.mensaje }}</div>
+          <div class="chat-message-time">{{ formatTimestamp(message.fecha) }}</div>
+        </div>
+      }
+    }
+  </div>
+  <div class="input-mes">
+    <input type="text" class="form-control" placeholder="Escribe un mensaje..." [(ngModel)]="messageText" (keyup.enter)="sendMessage()">
+    <button class="btn btn-primary btn-enviar" (click)="sendMessage()">Enviar</button>
+  </div>
+</ion-content>

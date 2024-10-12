@@ -1,0 +1,52 @@
+* {
+  color: white;
+}
+
+ion-toolbar {
+  --background: #6030ff;
+}
+
+ion-title {
+  font-size: 1.5em;
+}
+
+ion-content {
+  --background: #2f2d4a;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-botones {
+  height: 80vh;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.boton-sala {
+  font-size: 1.5em;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 48vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.boton-sala strong {
+  width: 95px;
+}
+
+.a4 {
+  background-color: #ec5acf;
+}
+
+.b4 {
+
+  background-color: #30ffc1;
+}
